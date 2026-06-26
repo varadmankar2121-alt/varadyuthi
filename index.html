@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1.0" name="viewport"/>
+<title>Varad Yuthi — Farmhouse Stay in Lonavla</title>
+<meta content="A peaceful, budget-friendly farmhouse in Ambavne, Lonavla. Garden, multiple rooms, bonfire on request. 2 hrs from Mumbai." name="description"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,600&amp;family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&amp;display=swap" rel="stylesheet"/>
+
+<link href="style.css" rel="stylesheet"/></head>
+<body>
+<!-- Lightbox -->
+<div class="lb" id="lb"><button class="lb-x" id="lbx">✕</button><img alt="" id="lbImg" src=""/></div>
+<!-- Scroll top -->
+<button id="stbtn" onclick="scrollTo({top:0,behavior:'smooth'})">
+<svg viewbox="0 0 24 24"><polyline points="18 15 12 9 6 15"></polyline></svg>
+</button>
+<!-- Mobile menu -->
+<div class="mob-menu" id="mobMenu">
+<a href="#about" onclick="closeMob()">About</a>
+<a href="#amenities" onclick="closeMob()">Amenities</a>
+<a href="#rooms" onclick="closeMob()">Rooms</a>
+<a href="#pricing" onclick="closeMob()">Pricing</a>
+<a href="#location" onclick="closeMob()">Location</a>
+<a class="mb-cta" href="#book" onclick="closeMob()">Book Now</a>
+</div>
+<!-- Nav -->
+<nav id="nav">
+<a href="#hero" style="display:flex;flex-direction:column;line-height:1">
+<span class="nav-brand-name">Varad Yuthi</span>
+<span class="nav-brand-sub">Lonavla Farmhouse</span>
+</a>
+<ul class="nav-links">
+<li><a href="#about">About</a></li>
+<li><a href="#amenities">Amenities</a></li>
+<li><a href="#rooms">Rooms</a></li>
+<li><a href="#pricing">Pricing</a></li>
+<li><a href="#location">Location</a></li>
+<li><a class="nav-cta" href="#book">Book Now</a></li>
+</ul>
+<button class="hamburger" id="ham" onclick="toggleMob()"><span></span><span></span><span></span></button>
+</nav>
+<!-- HERO -->
+<section id="hero">
+<div class="hero-bg">
+<div class="hero-img" id="heroBg"></div>
+<div class="hero-ov"></div>
+</div>
+<div class="hero-body">
+<div class="hero-tag reveal">
+<svg fill="none" height="11" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" width="11"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"></path></svg>
+      Ambavne Village, Lonavla, Maharashtra
+    </div>
+<h1 class="hero-h1 reveal d1">Wake up to <em>misty mornings</em><br/>in the Sahyadris</h1>
+<p class="hero-sub reveal d2">A family-owned farmhouse retreat — peaceful, affordable, and just 2 hours from Mumbai. Perfect for families, couples &amp; friends.</p>
+<div class="hero-btns reveal d3">
+<a class="btn-p" href="https://wa.me/919167662121?text=Hi!%20I%20want%20to%20book%20Varad%20Yuthi%20farmhouse%20in%20Lonavla" rel="noopener" target="_blank">
+<svg fill="white" height="16" viewbox="0 0 24 24" width="16"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"></path></svg>
+        Book via WhatsApp
+      </a>
+<a class="btn-g" href="#rooms">Explore the property →</a>
+</div>
+<div class="hero-chips reveal d4">
+<span class="chip">📍 Ambavne, Lonavla</span>
+<span class="chip">🛏 Multiple rooms</span>
+<span class="chip">🔥 Bonfire on request</span>
+<span class="chip">🏔  Korigad Fort views</span>
+<span class="chip">💚 Budget-friendly</span>
+</div>
+</div>
+</section>
+<!-- Stats -->
+<div class="stats-strip reveal">
+<div class="stat-item"><div class="stat-num">2 hrs</div><div class="stat-label">from Mumbai</div></div>
+<div class="stat-item"><div class="stat-num">1 hr</div><div class="stat-label">from Pune</div></div>
+<div class="stat-item"><div class="stat-num">5★</div><div class="stat-label">Google rated</div></div>
+<div class="stat-item"><div class="stat-num">6+</div><div class="stat-label">Guests comfortably</div></div>
+<div class="stat-item"><div class="stat-num">₹2500</div><div class="stat-label">Starting per night</div></div>
+</div>
+<!-- Marquee -->
+<div class="mq-wrap">
+<div class="mq-track">
+<span>Garden &amp; Lawn</span><span>Multiple Bedrooms</span><span>Bonfire on Request</span><span>Kitchen Access</span><span>Free Parking</span><span>Near Korigad Fort</span><span>Cool Misty Climate</span><span>Lush Sahyadri Views</span>
+<span>Garden &amp; Lawn</span><span>Multiple Bedrooms</span><span>Bonfire on Request</span><span>Kitchen Access</span><span>Free Parking</span><span>Near Korigad Fort</span><span>Cool Misty Climate</span><span>Lush Sahyadri Views</span>
+</div>
+</div>
+<!-- ABOUT -->
+<section id="about">
+<div class="about-grid">
+<div class="about-vis reveal-l">
+<div class="about-main">
+<img alt="Varad Yuthi farmhouse front with hydrangeas" loading="lazy" src="images/image1.jpg"/>
+<div class="about-badge"><div class="ab-num">5★</div><div class="ab-lbl">Google Rated</div></div>
+</div>
+<div class="about-acc">
+<img alt="Garden path leading to farmhouse" loading="lazy" src="images/image2.jpg"/>
+</div>
+</div>
+<div class="about-txt reveal-r">
+<div class="sec-eye">About the property</div>
+<h2 class="sec-title">A family home,<br/><em>shared with you</em></h2>
+<p>Varad Yuthi is a family-owned farmhouse in the serene village of Ambavne, just minutes from the heart of Lonavla — with a direct view of Korigad Fort from the property.</p>
+<p>Whether you're here for Bhushi Dam, treks to Korigad, the famous chikki, or simply Lonavla's cool misty air — our home is your ideal base.</p>
+<div class="detail-grid">
+<div class="det-box">
+<div class="det-ico"><svg viewbox="0 0 24 24"><path d="M12 22s-8-4.5-8-11.8A8 8 0 0112 2a8 8 0 018 8.2c0 7.3-8 11.8-8 11.8z"></path></svg></div>
+<div><div class="det-lbl">Address</div><div class="det-val">Ambavne, Lonavla, MH</div></div>
+</div>
+<div class="det-box">
+<div class="det-ico"><svg viewbox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg></div>
+<div><div class="det-lbl">Check-in / Check-out</div><div class="det-val">12:00 PM / 11:00 AM</div></div>
+</div>
+<div class="det-box">
+<div class="det-ico"><svg viewbox="0 0 24 24"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"></path></svg></div>
+<div><div class="det-lbl">Best for</div><div class="det-val">Families · Couples · Groups</div></div>
+</div>
+<div class="det-box">
+<div class="det-ico"><svg viewbox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.8 19.8 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.8 19.8 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"></path></svg></div>
+<div><div class="det-lbl">Contact</div><div class="det-val">WhatsApp &amp; Call</div></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- AMENITIES -->
+<section id="amenities">
+<div class="reveal">
+<div class="sec-eye">Amenities</div>
+<h2 class="sec-title">Everything for a <em>perfect escape</em></h2>
+</div>
+<div class="am-grid">
+<div class="am-card reveal d1">
+<div class="am-ico"><svg viewbox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg></div>
+<h3>Garden &amp; lawn</h3><p>Sprawling green lawns surrounded by flowering plants — perfect for morning walks and evening relaxation.</p>
+</div>
+<div class="am-card reveal d2">
+<div class="am-ico"><svg viewbox="0 0 24 24"><path d="M2 4h20v5H2zM4 9v11M20 9v11M2 19h20"></path></svg></div>
+<h3>Multiple bedrooms</h3><p>Comfortable, well-maintained rooms to accommodate families and groups of all sizes.</p>
+</div>
+<div class="am-card reveal d3">
+<div class="am-ico"><svg viewbox="0 0 24 24"><circle cx="12" cy="5" r="3"></circle><path d="M12 8v8M9 22h6M8 14c-2 1-4 3-4 5h16c0-2-2-4-4-5"></path></svg></div>
+<h3>Bonfire on request</h3><p>Gather under the Lonavla stars with a cozy bonfire — just let us know when you book.</p>
+</div>
+<div class="am-card reveal d1">
+<div class="am-ico"><svg viewbox="0 0 24 24"><path d="M3 11l19-9-9 19-2-8-8-2z"></path></svg></div>
+<h3>Kitchen access</h3><p>Fully equipped kitchen so you can cook your own meals or prep a BBQ on the open lawn.</p>
+</div>
+<div class="am-card reveal d2">
+<div class="am-ico"><svg viewbox="0 0 24 24"><rect height="10" rx="2" width="16" x="2" y="7"></rect><path d="M22 11v2"></path></svg></div>
+<h3>Free parking</h3><p>Ample parking right on the property — no stress after the expressway drive.</p>
+</div>
+<div class="am-card reveal d3">
+<div class="am-ico"><svg viewbox="0 0 24 24"><path d="M5 12.55a11 11 0 0114.08 0"></path><path d="M1.42 9a16 16 0 0121.16 0"></path><path d="M8.53 16.11a6 6 0 016.95 0"></path><circle cx="12" cy="20" r="1"></circle></svg></div>
+<h3>Wi-Fi &amp; essentials</h3><p>Stay connected with Wi-Fi, hot water geyser, and all basic essentials for a comfortable stay.</p>
+</div>
+</div>
+</section>
+<!-- ROOMS & GALLERY -->
+<section id="rooms">
+<div class="rooms-hdr">
+<div class="reveal-l">
+<div class="sec-eye">Rooms &amp; Gallery</div>
+<h2 class="sec-title">Spaces that feel like <em>home</em></h2>
+</div>
+<a class="btn-p reveal-r" href="#book">Check availability</a>
+</div>
+<div class="gal-grid reveal">
+<div class="gp g0" onclick="openLb('images/image3.jpg','Varad Yuthi — full front view')">
+<img alt="Varad Yuthi front facade" loading="lazy" src="images/image4.jpg"/>
+<div class="gp-lbl">Main property</div>
+</div>
+<div class="gp g1" onclick="openLb('images/image5.jpg','Property with Sahyadri mountains')">
+<img alt="House with mountains" loading="lazy" src="images/image6.jpg"/>
+<div class="gp-lbl">Korigad Fort view</div>
+</div>
+<div class="gp g2" onclick="openLb('images/image7.jpg','Entry gate — Varad Yuthi Farm')">
+<img alt="Entry gate nameplate" loading="lazy" src="images/image8.jpg"/>
+<div class="gp-lbl">Entrance gate</div>
+</div>
+<div class="gp g3" onclick="openLb('images/image9.jpg','Wide view — farmhouse and driveway')">
+<img alt="Farmhouse driveway" loading="lazy" src="images/image10.jpg"/>
+<div class="gp-lbl">Driveway &amp; parking</div>
+</div>
+<div class="gp g4" onclick="openLb('images/image11.jpg','View of Korigad Fort from the property')">
+<img alt="Mountain view from property" loading="lazy" src="images/image12.jpg"/>
+<div class="gp-lbl">Mountain views</div>
+</div>
+<div class="gp g5" onclick="openLb('images/image13.jpg','Lush garden and flowers')">
+<img alt="Garden flowers" loading="lazy" src="images/image14.jpg"/>
+<div class="gp-lbl">Garden &amp; flora</div>
+</div>
+<div class="gp g6" onclick="openLb('images/image15.jpg','Monsoon greenery on the farm')">
+<img alt="Monsoon greenery" loading="lazy" src="images/image16.jpg"/>
+<div class="gp-lbl">Monsoon greenery</div>
+</div>
+</div>
+<div class="room-cards">
+<div class="rc reveal d1">
+<div class="rc-img"><img alt="Twin bedroom with pink wall" loading="lazy" src="images/image17.jpg"/></div>
+<div class="rc-body">
+<h3>Standard Room</h3>
+<p>Cozy twin-bed room with clean linen, fan, and a fresh feel — perfect for couples or small groups.</p>
+<div class="rf-wrap"><span class="rf">Twin beds</span><span class="rf">Fan</span><span class="rf">Clean linen</span></div>
+<div class="rc-price"><span class="rc-price-n">₹1,200</span><span class="rc-price-u">/ night per room</span></div>
+<a class="rc-btn" href="https://wa.me/919167662121?text=Hi!%20I%20want%20to%20book%20the%20Standard%20Room%20at%20Varad%20Yuthi" rel="noopener" target="_blank">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"></path></svg>
+          Book via WhatsApp
+        </a>
+</div>
+</div>
+<div class="rc reveal d2">
+<div class="rc-img"><img alt="Bunk bed room with kitchen counter" loading="lazy" src="images/image18.jpg"/></div>
+<div class="rc-body">
+<h3>Bunk Bed Room</h3>
+<p>Fun bunk bed setup ideal for friend groups or kids — spacious with ceiling fan and ample storage.</p>
+<div class="rf-wrap"><span class="rf">Bunk beds</span><span class="rf">Fan</span><span class="rf">Storage space</span></div>
+<div class="rc-price"><span class="rc-price-n">₹1,500</span><span class="rc-price-u">/ night per room</span></div>
+<a class="rc-btn" href="https://wa.me/919167662121?text=Hi!%20I%20want%20to%20book%20the%20Bunk%20Bed%20Room%20at%20Varad%20Yuthi" rel="noopener" target="_blank">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"></path></svg>
+          Book via WhatsApp
+        </a>
+</div>
+</div>
+<div class="rc reveal d3">
+<div class="rc-img"><img alt="Second twin bedroom" loading="lazy" src="images/image19.jpg"/></div>
+<div class="rc-body">
+<h3>Entire Farmhouse</h3>
+<p>Book the entire property for your group — all rooms, full kitchen, garden, and total privacy.</p>
+<div class="rf-wrap"><span class="rf">All rooms</span><span class="rf">Full kitchen</span><span class="rf">Private garden</span></div>
+<div class="rc-price"><span class="rc-price-n">₹3,500</span><span class="rc-price-u">/ night</span></div>
+<a class="rc-btn" href="https://wa.me/919167662121?text=Hi!%20I%20want%20to%20book%20the%20entire%20Varad%20Yuthi%20farmhouse" rel="noopener" target="_blank">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"></path></svg>
+          Book via WhatsApp
+        </a>
+</div>
+</div>
+</div>
+</section>
+<!-- PRICING -->
+<section id="pricing">
+<div class="sec-eye">Pricing</div>
+<h2 class="sec-title">Honest, <em>transparent</em> rates</h2>
+<p class="price-sub">No hidden charges. What you see is what you pay.</p>
+<div class="price-grid">
+<div class="pc reveal d1">
+<div class="pc-type">Weekday</div>
+<div class="pc-amount">₹2,500<span>/night</span></div>
+<div class="pc-note">Mon – Thu · Entire farmhouse</div>
+<ul class="pc-feats">
+<li><svg viewbox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>All rooms included</li>
+<li><svg viewbox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>Garden &amp; lawn access</li>
+<li><svg viewbox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>Kitchen access</li>
+<li><svg viewbox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>Free parking</li>
+</ul>
+<a class="pc-btn" href="https://wa.me/919167662121?text=Hi!%20I%20want%20to%20book%20Varad%20Yuthi%20on%20a%20weekday" rel="noopener" target="_blank">Book on WhatsApp</a>
+</div>
+<div class="pc pop reveal d2">
+<div class="pop-badge">Most popular</div>
+<div class="pc-type">Weekend</div>
+<div class="pc-amount">₹3,500<span>/night</span></div>
+<div class="pc-note">Fri – Sun · Entire farmhouse</div>
+<ul class="pc-feats">
+<li><svg viewbox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>All rooms included</li>
+<li><svg viewbox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>Garden &amp; lawn access</li>
+<li><svg viewbox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>Bonfire on request</li>
+<li><svg viewbox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>Kitchen access</li>
+<li><svg viewbox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>Free parking</li>
+</ul>
+<a class="pc-btn" href="https://wa.me/919167662121?text=Hi!%20I%20want%20to%20book%20Varad%20Yuthi%20for%20the%20weekend" rel="noopener" target="_blank">Book on WhatsApp</a>
+</div>
+<div class="pc reveal d3">
+<div class="pc-type">3+ Nights</div>
+<div class="pc-amount">₹2,000<span>/night</span></div>
+<div class="pc-note">Any days · Best value</div>
+<ul class="pc-feats">
+<li><svg viewbox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>All rooms included</li>
+<li><svg viewbox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>Special discount</li>
+<li><svg viewbox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>Bonfire on request</li>
+<li><svg viewbox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>All amenities included</li>
+</ul>
+<a class="pc-btn" href="https://wa.me/919167662121?text=Hi!%20I%20want%20to%20book%20Varad%20Yuthi%20for%203%2B%20nights" rel="noopener" target="_blank">Book on WhatsApp</a>
+</div>
+</div>
+<p class="price-note-foot reveal">* Prices are indicative. Contact us for exact quotes based on group size and dates.</p>
+</section>
+<!-- REVIEWS -->
+<section id="reviews">
+<div class="reveal">
+<div class="sec-eye">Guest reviews</div>
+<h2 class="sec-title">What our guests <em>say</em></h2>
+</div>
+<div class="rev-grid">
+<div class="rev-card reveal d1">
+<div class="r-stars">★★★★★</div>
+<p class="r-txt">"Lovely farmhouse with a huge garden and an amazing view of Korigad Fort. We came with our family of 8 and had so much space. The bonfire at night was the highlight!"</p>
+<div class="r-div"></div>
+<div class="r-auth"><div class="r-av">PS</div><div><div class="r-name">Priya S.</div><div class="r-from">Mumbai · Family trip</div></div></div>
+</div>
+<div class="rev-card reveal d2">
+<div class="r-stars">★★★★★</div>
+<p class="r-txt">"Budget-friendly and very clean. The caretaker was so warm and helpful. Perfect for a quick weekend getaway from Pune. Will come back in monsoon!"</p>
+<div class="r-div"></div>
+<div class="r-auth"><div class="r-av">RK</div><div><div class="r-name">Rahul K.</div><div class="r-from">Pune · Friends group</div></div></div>
+</div>
+<div class="rev-card reveal d3">
+<div class="r-stars">★★★★★</div>
+<p class="r-txt">"We booked for our anniversary. The garden in the morning with Lonavla mist and the view of the fort was just magical. Highly recommended!"</p>
+<div class="r-div"></div>
+<div class="r-auth"><div class="r-av">AM</div><div><div class="r-name">Ananya M.</div><div class="r-from">Mumbai · Couple trip</div></div></div>
+</div>
+</div>
+</section>
+<!-- LOCATION -->
+<section id="location">
+<div class="loc-grid">
+<div class="reveal-l">
+<div class="sec-eye">Location</div>
+<h2 class="sec-title">Close to everything,<br/><em>away from crowds</em></h2>
+<p style="color:var(--stone);font-weight:300;font-size:.9375rem;margin-bottom:.25rem">Ambavne village, Lonavla — minutes from all major attractions.</p>
+<ul class="nearby-list">
+<li class="nb-item"><span class="nb-place"><svg viewbox="0 0 24 24"><path d="M12 22s-8-4.5-8-11.8A8 8 0 0112 2a8 8 0 018 8.2c0 7.3-8 11.8-8 11.8z"></path><circle cx="12" cy="10" r="3"></circle></svg>Lonavla Lake</span><span class="nb-dist">~4 km</span></li>
+<li class="nb-item"><span class="nb-place"><svg viewbox="0 0 24 24"><path d="M12 22s-8-4.5-8-11.8A8 8 0 0112 2a8 8 0 018 8.2c0 7.3-8 11.8-8 11.8z"></path><circle cx="12" cy="10" r="3"></circle></svg>Bhushi Dam</span><span class="nb-dist">~8 km</span></li>
+<li class="nb-item"><span class="nb-place"><svg viewbox="0 0 24 24"><path d="M12 22s-8-4.5-8-11.8A8 8 0 0112 2a8 8 0 018 8.2c0 7.3-8 11.8-8 11.8z"></path><circle cx="12" cy="10" r="3"></circle></svg>Korigad Fort</span><span class="nb-dist">~9 km</span></li>
+<li class="nb-item"><span class="nb-place"><svg viewbox="0 0 24 24"><path d="M12 22s-8-4.5-8-11.8A8 8 0 0112 2a8 8 0 018 8.2c0 7.3-8 11.8-8 11.8z"></path><circle cx="12" cy="10" r="3"></circle></svg>Tiger's Leap</span><span class="nb-dist">~14 km</span></li>
+<li class="nb-item"><span class="nb-place"><svg viewbox="0 0 24 24"><path d="M12 22s-8-4.5-8-11.8A8 8 0 0112 2a8 8 0 018 8.2c0 7.3-8 11.8-8 11.8z"></path><circle cx="12" cy="10" r="3"></circle></svg>Lonavla Railway Station</span><span class="nb-dist">~7 km</span></li>
+<li class="nb-item"><span class="nb-place"><svg viewbox="0 0 24 24"><path d="M12 22s-8-4.5-8-11.8A8 8 0 0112 2a8 8 0 018 8.2c0 7.3-8 11.8-8 11.8z"></path><circle cx="12" cy="10" r="3"></circle></svg>Mumbai–Pune Expressway</span><span class="nb-dist">~5 km</span></li>
+</ul>
+</div>
+<div class="reveal-r">
+<div class="map-card">
+<iframe allowfullscreen="" class="map-embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3778.5!2d73.3752264!3d18.614479!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be81df738fae74d%3A0x377450df34a51d6!2sVaradyuthi!5e0!3m2!1sen!2sin!4v1700000000001!5m2!1sen!2sin" title="Varad Yuthi on Google Maps"></iframe>
+<div class="map-footer">
+<div class="dir-row"><svg viewbox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg><span><strong>~2 hrs</strong> from Mumbai via Expressway</span></div>
+<div class="dir-row"><svg viewbox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg><span><strong>~1 hr</strong> from Pune via Expressway</span></div>
+<div class="dir-row"><svg viewbox="0 0 24 24"><rect height="14" rx="1" width="10" x="2" y="7"></rect><rect height="18" rx="1" width="10" x="12" y="3"></rect></svg><span>Lonavla railway station — <strong>~7 km</strong></span></div>
+<a class="map-btn" href="https://www.google.com/maps/place/Varadyuthi/@18.614479,73.3752264,17z/data=!3m1!4b1!4m6!3m5!1s0x3be81df738fae74d:0x377450df34a51d6!8m2!3d18.614479!4d73.3778013!16s%2Fg%2F11vxx9zphp" rel="noopener" target="_blank">
+<svg viewbox="0 0 24 24"><path d="M12 22s-8-4.5-8-11.8A8 8 0 0112 2a8 8 0 018 8.2c0 7.3-8 11.8-8 11.8z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            Open in Google Maps
+          </a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- BOOK -->
+<section id="book">
+<div class="reveal" style="position:relative;z-index:1">
+<div class="sec-eye">Ready to visit?</div>
+<h2 class="sec-title">Book your stay at<br/><em>Varad Yuthi</em></h2>
+<p class="cta-sub">Message us on WhatsApp or call directly — we'll confirm your dates within the hour.</p>
+<div class="cta-acts">
+<a class="wa-btn" href="https://wa.me/919167662121?text=Hi!%20I%20want%20to%20book%20Varad%20Yuthi%20farmhouse%20in%20Lonavla.%20Please%20share%20availability." rel="noopener" target="_blank">
+<svg viewbox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"></path></svg>
+        Chat on WhatsApp
+      </a>
+<a class="call-btn" href="tel:+919167662121">
+<svg viewbox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.8 19.8 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.8 19.8 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"></path></svg>
+        Call us directly
+      </a>
+</div>
+<div class="ci-row">
+<div class="ci"><svg viewbox="0 0 24 24"><path d="M12 22s-8-4.5-8-11.8A8 8 0 0112 2a8 8 0 018 8.2c0 7.3-8 11.8-8 11.8z"></path></svg>Ambavne, Lonavla, Maharashtra</div>
+<div class="ci"><svg viewbox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><path d="M2 12h20M12 2a15.3 15.3 0 010 20M12 2a15.3 15.3 0 000 20"></path></svg>varadyuthi.in</div>
+</div>
+</div>
+</section>
+<footer>
+<div class="foot-brand">Varad <em>Yuthi</em></div>
+<ul class="foot-links">
+<li><a href="#about">About</a></li>
+<li><a href="#amenities">Amenities</a></li>
+<li><a href="#rooms">Rooms</a></li>
+<li><a href="#pricing">Pricing</a></li>
+<li><a href="#location">Location</a></li>
+<li><a href="#book">Book</a></li>
+</ul>
+<p class="foot-copy">© 2025 Varad Yuthi · Lonavla</p>
+</footer>
+
+<script src="script.js"></script></body>
+</html>
